@@ -1,0 +1,40 @@
+
+
+.header__inner{
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  height: 116px;
+  background: var(--color-blue-600);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--category {
+  background-color: var(--color-blue-600);
+  border-style: hidden;
+}
+
+
+
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main{
+  min-height: 52rem;
+}
+
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
