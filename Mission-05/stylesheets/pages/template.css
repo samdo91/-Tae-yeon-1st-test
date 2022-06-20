@@ -1,6 +1,32 @@
+@import url("./theme.css");
+
+body{
+  font-family: var(--font-family);
+}
+header {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
+  width: 1920;
+}
 
 
-.header__inner{
+footer {
+  box-sizing: border-box;
+  position: absolute;
+
+  margin-bottom: 100px;
+
+  width: 1920px;
+  height: 349px;
+  font-size: 24px;
+
+
+}
+
+.header__inner {
   grid-column: 1;
   grid-row: 1;
   display: flex;
@@ -11,14 +37,20 @@
   color: white;
   justify-content: center;
   align-items: center;
+  border-radius: 3%;
+  box-shadow: 4px;
+
 }
 
 .button--category {
   background-color: var(--color-blue-600);
   border-style: hidden;
+
 }
 
-
+.is--active {
+  display: block;
+}
 
 
 /* ---------------------------------------------- */
@@ -30,11 +62,74 @@
 /* 메인 콘텐츠                                       */
 /* ---------------------------------------------- */
 /* 메인 콘텐츠 영역의 최소 높이 설정 */
-.main{
+.main {
   min-height: 52rem;
 }
 
+.footergray {
+  background-color: var(--color-gray-600);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.divider {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer_medle {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: space-around;
+
+
+}
+
+.pon {
+  font-size: 48px;
+  margin: 16px;
+}
+
+
+
+.underlogo {
+  display: flex;
+  align-items: flex-start; 
+  width: 176px;
+  height: 40px;
+  background-image: url("/1차 과제/Mission-05/Mission-05/assets/logo/logo-mono.svg");
+ 
+}
+
+.footer_row{ 
+  display: grid;
+  grid-template-columns:4fr 1fr;
+  height: 120px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  background-color: var(--color-gray-900);
+  color: white;
+}
+.footer_text{
+  justify-content: center;
+  align-items: center;
+    
+}
+.sns_img{ align-content: end;
+          align-items: end;}
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
